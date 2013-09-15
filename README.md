@@ -26,6 +26,6 @@ hubot quote me [query|query|query]
 
 ## Example
 
-hubot> hubot quote me Joel on software|Paul Graham|prog style
-hubot> Don't diddle code to make it faster - find a better algorithm.
+- hubot> hubot quote me Joel on software|Paul Graham|prog style
+- hubot> Don't diddle code to make it faster - find a better algorithm.
             - The Elements of Programming Style (Kernighan & Plaugher)
