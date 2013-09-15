@@ -48,19 +48,9 @@ getQuote = (msg, query, cb) ->
       if quote?.quote.length
         cb quote.quote
       else
-        cb "What the hell is #{query}"
+        cb "We live in the era of smart phones and stupid people."
 
 getIheartQuote = (msg, query, cb) ->
-  heart_path = "http://icons.iconarchive.com/icons/designbolts/free-valentine-heart/16/Heart-icon.png"
   sad_face = "http://icons.iconarchive.com/icons/icojam/onebit/16/smiley-sad-icon.png"
-  rtn_str = "#{heart_path}#{heart_path} Awww, isn't that sweet. Nobody cares that you heart #{query}! #{sad_face}"
-  cb rtn_str
-  
-getHelpTopics = (msg, cb) ->
-  help_topics = "Available help topics"
-  cb help_topics
-  
-#  msg.http('http://www.iheartquotes.com/api/vi/random?format=json')
-#   .get() ( err, res, body ) ->
-#     console.log( body )
-   
+  rtn_str = "Awww, isn't that sweet. Nobody cares that you heart #{query}! #{sad_face}"
+  cb rtn_str   
