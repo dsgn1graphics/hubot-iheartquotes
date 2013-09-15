@@ -1,35 +1,31 @@
-# Hubot Example
+# Hubot-iHeartQuotes
 
-An example script package for Hubot
+iHeartQuotes.com API wrapper for Hubot
 
-[![Build Status](https://travis-ci.org/hubot-scripts/hubot-example.png)](https://travis-ci.org/hubot-scripts/hubot-example)
+## Usage
 
-## Directory Structure
+hubot whats my fortune
+- Returns a random daily fortune
 
-Using the common directory structure for hubot script packages it will be easy
-to manage and allow others to easily contribute to your package.
+hubot quote
+- Return a random quote from the following predetermined categories
+  -- Joel on software
+  -- Paul Graham
+  -- prog style [programming style]
+  
+hubot quote me [query]
+- Return a random quote from the query string supplied
 
-### script
+hubot iheart [query]
+- Return a Hubot message
 
-This directory is home to a couple of development scripts; `bootstrap` and `test`
-they're used to bootstrap the development environment and run tests
-respectively.
+## Multiple Querys
 
-### src
+hubot quote me [query|query|query]
+- Appends multiple query string to the API resquest. Return a random quote from any of the topics supplied
 
-This directory is home to the actual hubot scripts in the package. Your
-`index.coffee` entry point will load the scripts from this directory.
+## Example
 
-### test
-
-This directory is home to any tests you write for your scripts. This example
-package uses Mocha, Chai and Sinon to manage writing tests.
-
-## Advantages of Building a Package
-
-Some of the advantages of building an npm package for your hubot script(s) are:
-
-* You don't need to rely on when hubot-scripts package is released.
-* You can specify dependencies in the `package.json` rather than have users
-  manually specify them
-* You can easily add tests using your favourite frameworks and libraries
+hubot> hubot quote me Joel on software|Paul Graham|prog style
+hubot> Don't diddle code to make it faster - find a better algorithm.
+            - The Elements of Programming Style (Kernighan & Plaugher)

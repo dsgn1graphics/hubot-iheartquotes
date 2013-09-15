@@ -1,22 +1,24 @@
 {
-  "name": "hubot-example",
-  "description": "An example script pacakage for Hubot",
+  "name": "hubot-iheartquotes",
+  "description": "iHeartQuotes.com API wrapper for Hubot",
   "version": "1.0.0",
-  "author": "Tom Bell <tomb@tomb.io>",
+  "author": "Myron Robertson <mrobertson234@gmail.com>",
   "license": "MIT",
 
   "keywords": [
     "hubot",
-    "hubot-scripts"
+    "hubot-scripts",
+    "iheartquotes",
+    "quotes"
   ],
 
   "repository": {
     "type": "git",
-    "url": "git://github.com/hubot-scripts/hubot-example.git"
+    "url": "https://github.com/dsgn1graphics/hubot-iheartquotes.git"
   },
 
   "bugs": {
-    "url": "https://github.com/hubot-scripts/hubot-example/issues"
+    "url": "https://github.com/dsgn1graphics/hubot-iheartquotes/issues"
   },
 
   "dependencies": {
